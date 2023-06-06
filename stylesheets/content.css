@@ -1,0 +1,116 @@
+*{
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+}
+
+@font-face {
+font-family: "CarlaSansLight";
+src: url("../fonts/CarlaSansLight.ttf") format("truetype");
+font-style: Light;
+font-weight: Light;
+}
+
+h1,p{
+    font-family: 'CarlaSansLight';
+    margin-top: 3%;
+    margin-left: 1%;
+}
+
+.language-select {
+    margin-left: 1%;
+    position: relative;
+    display: inline-block;
+}
+
+.language-btn {
+    padding: 8px 16px;
+    background-color: #f2f2f2;
+    border: none;
+    cursor: pointer;
+}
+
+.language-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+.language-option {
+    display: block;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: #333;
+}
+
+.language-option:hover {
+    background-color: #f2f2f2;
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .slides {
+    display: flex;
+    width: 400%; /* Количество слайдов умноженное на 100% */
+    transition: 0.5s; /* Длительность анимации */
+  }
+  
+  .slide {
+    width: 25%; /* Ширина каждого слайда (100% / количество слайдов) */
+    display: flex;
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+    margin: 1%;
+  }
+  
+  .prev,
+  .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  }
+
+
+  .dots {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: gray;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  .active {
+    background-color: rgb(92, 97, 182);
+  }
+  
